@@ -17,7 +17,7 @@ const styles = theme => ({
     color: theme.palette.grey[500]
   },
   title: {
-    "font-family": "cursive",
+    "font-family": "emoji",
     "font-weight": 600
   }
 });
