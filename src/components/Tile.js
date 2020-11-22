@@ -1,11 +1,15 @@
 import React from "react";
-import { Paper } from "@material-ui/core";
+import { Button, Card, CardActions, Typography } from "@material-ui/core";
 
 const Tile = ({ data }) => {
   return (
-    <Paper elevation={3} className={"tile"}>
-      {data}
-    </Paper>
+    <Card elevation={3} className={"tile"}>
+      <CardActions disableSpacing className={"tile-card"}>
+        <Button size="large">
+          <Typography variant="h3">{data}</Typography>
+        </Button>
+      </CardActions>
+    </Card>
   );
 };
 
