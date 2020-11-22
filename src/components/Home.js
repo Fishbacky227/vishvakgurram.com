@@ -26,7 +26,7 @@ const Home = () => {
     {
       char: "I",
       desc: "Imaginative",
-      img: "images/vg_01.jpg"
+      vid: "https://www.youtube.com/watch?v=xlfdz8ZPOwY"
     },
     {
       char: "S",

@@ -4,6 +4,7 @@ import Typography from "@material-ui/core/Typography";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
 import { Dialog, DialogContent, IconButton } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
+import ReactPlayer from "react-player";
 
 const styles = theme => ({
   root: {
@@ -47,14 +48,24 @@ const ImageModal = ({ data, onClose }) => {
     <Dialog open={true} onClose={onClose} maxWidth={"xl"} fullWidth={false}>
       <DialogTitle onClose={onClose}>{data.desc}</DialogTitle>
       <DialogContent>
-        <img
-          style={{
-            height: "100vh",
-            objectFit: "contain"
-          }}
-          src={data.img}
-          alt={data.desc}
-        />
+        {data.img && (
+          <img
+            style={{
+              height: "100vh",
+              objectFit: "contain"
+            }}
+            src={data.img}
+            alt={data.desc}
+          />
+        )}
+        {data.vid && (
+          <ReactPlayer
+            url={data.vid}
+            style={{
+              width: "100vh"
+            }}
+          />
+        )}
       </DialogContent>
     </Dialog>
   );
