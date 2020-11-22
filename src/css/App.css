@@ -1,5 +1,8 @@
 body {
   text-transform: uppercase;
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  margin: 0 auto;
 }
 
 .App {
