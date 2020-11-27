@@ -1,13 +1,11 @@
 body {
   text-transform: uppercase;
-  height: 100vh;
   min-height: -webkit-fill-available;
   margin: 0 auto;
 }
 
 .App {
   text-align: center;
-  height: 100vh;
 }
 
 .App-logo {
@@ -63,13 +61,13 @@ body {
 
 .tile-grid {
   height: 100%;
-  font-size: 96px;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .tile {
   width: 100px;
+  height: 100px;
   background: linear-gradient(45deg, #2196f3 30%, #21cbf3 90%);
   border: 0;
   padding: 0 30px;
@@ -83,14 +81,21 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-device-width: 768px) {
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.tile-text {
+  font-size: 55px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+@media only screen and (max-device-width: 500px) {
   .tile {
-    width: 76px;
+    width: 86px;
+    height: 86px;
     padding: 0;
   }
   .tile-grid {
-    font-size: 60px;
     margin: 0 0 10px;
-    flex-direction: column;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-text.tile-text {
+    font-size: 40px;
   }
 }
