@@ -21,7 +21,7 @@ const Home = () => {
     {
       char: "V",
       desc: "Valiant",
-      img: "images/vg_01.jpg"
+      vid: "https://youtu.be/DHqxnhcBMPY"
     },
     {
       char: "I",
@@ -31,27 +31,27 @@ const Home = () => {
     {
       char: "S",
       desc: "Spunky",
-      img: "images/vg_01.jpg"
+      vid: "https://youtu.be/X-03QBwcCLc"
     },
     {
       char: "H",
       desc: "Happy",
-      img: "images/vg_01.jpg"
+      vid: "https://www.youtube.com/watch?v=y7hv7BERgLY"
     },
     {
       char: "V",
       desc: "Vital",
-      img: "images/vg_01.jpg"
+      vid: "https://www.youtube.com/watch?v=kGCsbi7vlFs"
     },
     {
       char: "A",
       desc: "Affectionate",
-      vid: "https://www.youtube.com/watch?v=xlfdz8ZPOwY"
+      vid: "https://www.youtube.com/watch?v=6YjJ4CtDgjg"
     },
     {
       char: "K",
       desc: "Kind",
-      img: "images/vg_01.jpg"
+      vid: "https://www.youtube.com/watch?v=T43W7TkcwtU"
     }
   ];
 

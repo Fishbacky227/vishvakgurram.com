@@ -48,16 +48,6 @@ const ImageModal = ({ data, onClose }) => {
     <Dialog open={true} onClose={onClose} maxWidth={"xl"} fullWidth={false}>
       <DialogTitle onClose={onClose}>{data.desc}</DialogTitle>
       <DialogContent>
-        {data.img && (
-          <img
-            style={{
-              height: "100vh",
-              objectFit: "contain"
-            }}
-            src={data.img}
-            alt={data.desc}
-          />
-        )}
         {data.vid && (
           <ReactPlayer
             url={data.vid}
