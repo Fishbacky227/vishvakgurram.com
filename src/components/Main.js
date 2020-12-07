@@ -18,8 +18,7 @@ const useExpired = time => {
   return expired;
 };
 
-//const BIRTHDAY_DATE = Date.parse("07 Dec 2020 00:00:00 PST");
-const BIRTHDAY_DATE = Date.now() + 5 * 1000;
+const BIRTHDAY_DATE = Date.parse("07 Dec 2020 00:00:00 PST");
 const Main = () => {
   const timeToExpire = Math.max(BIRTHDAY_DATE - Date.now(), 0);
   const expired = useExpired(timeToExpire);
